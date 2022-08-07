@@ -1,4 +1,79 @@
-export const heroes = [
+export const heroes = [{}];
+
+export const armies = [
+  {
+    name: "Dunedain III",
+    attack_type: "Melee",
+    race: "Men",
+    habilities: [
+      {
+        name: "Bullseye",
+        description: "Damage +30% against ranged targets",
+      },
+      {
+        name: "Gracefulness",
+        description: "Damage -30% from ranged units",
+      },
+    ],
+  },
+];
+
+export const heroesArmies = [
+  {
+    name: "Faramir",
+    armies: [
+      [
+        {
+          name: "Dunedain III",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 40, armySize: [] }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+            {
+              name: "Gracefulness",
+              description: "Damage -30% from ranged units",
+            },
+          ],
+        },
+      ],
+      [
+        {
+          name: "Guard of the Tower III",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 40, armySize: [] }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+            {
+              name: "Gracefulness",
+              description: "Damage -30% from ranged units",
+            },
+          ],
+        },
+        {
+          name: "Sharpshooter III",
+          attack_type: "Ranged",
+          race: "Men",
+          sizes: [{ heroLevel: 40, armySize: [] }],
+
+          habilities: [
+            {
+              name: "Ranged Advantage",
+              description: "First 2 rounds dealt +40% Damage",
+            },
+          ],
+        },
+        // here
+      ],
+    ],
+  },
   {
     name: "Theoden",
     armies: [
@@ -28,10 +103,10 @@ export const heroes = [
     armies: [
       [
         {
-          name: "Herald",
+          name: "Herald III",
           attack_type: "Melee",
           race: "Elves",
-          sizes: [{ heroLevel: 0, armySize: [] }],
+          sizes: [{ heroLevel: 40, armySize: [2000] }],
 
           habilities: [
             {
@@ -41,9 +116,10 @@ export const heroes = [
           ],
         },
         {
-          name: "Marchwarden",
+          name: "Marchwarden III",
           attack_type: "Ranged",
           race: "Elves",
+          sizes: [{ heroLevel: 40, armySize: [1000] }],
           habilities: [
             { name: "Keem Eye", description: "100% to gain Pursuit" },
             {
@@ -63,7 +139,79 @@ export const heroes = [
           name: "Dunedain III",
           attack_type: "Melee",
           race: "Men",
-          sizes: [{ heroLevel: 35, armySize: 3000 }],
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+            {
+              name: "Gracefulness",
+              description: "Damage -30% from ranged units",
+            },
+          ],
+        },
+        {
+          name: "Spearman II",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Anti-Cavalry Training",
+              description: "+30% damage dealt and -20% damage received",
+            },
+          ],
+        },
+      ],
+      [
+        {
+          name: "Ranger II",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 25, armySize: [1333] }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+          ],
+        },
+        {
+          name: "Knight II",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 25, armySize: [666] }],
+          habilities: [
+            {
+              name: "Mounted",
+              description: "-10% Damage received",
+            },
+            {
+              name: "Full Protection",
+              description: "-15% damage received from melee units",
+            },
+          ],
+        },
+        {
+          name: "Spearman II",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 25, armySize: 1333 }],
+          habilities: [
+            {
+              name: "Anti-Cavalry Training",
+              description: "+30% damage dealt and -20% damage received",
+            },
+          ],
+        },
+      ],
+      [
+        {
+          name: "Dunedain III",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 35, armySize: [3000] }],
           habilities: [
             {
               name: "Bullseye",
@@ -81,7 +229,7 @@ export const heroes = [
           name: "Dunedain III",
           attack_type: "Melee",
           race: "Men",
-          sizes: [{ heroLevel: 0, armySize: [] }],
+          sizes: [{ heroLevel: 40, armySize: [2000] }],
 
           habilities: [
             {
@@ -95,10 +243,10 @@ export const heroes = [
           ],
         },
         {
-          name: "Sharpshooter",
+          name: "Sharpshooter III",
           attack_type: "Ranged",
           race: "Men",
-          sizes: [{ heroLevel: 0, armySize: [] }],
+          sizes: [{ heroLevel: 40, armySize: [2000] }],
 
           habilities: [
             {
@@ -113,7 +261,7 @@ export const heroes = [
           name: "Dunedain III",
           attack_type: "Melee",
           race: "Men",
-          sizes: [{ heroLevel: 35, armySize: 1600 }],
+          sizes: [{ heroLevel: 35, armySize: [1600] }],
           habilities: [
             {
               name: "Bullseye",
@@ -126,10 +274,10 @@ export const heroes = [
           ],
         },
         {
-          name: "Warden",
+          name: "Warden II",
           attack_type: "Melee",
           race: "Elves",
-          sizes: [{ heroLevel: 35, armySize: 1600 }],
+          sizes: [{ heroLevel: 35, armySize: [1600] }],
           habilities: [
             {
               name: "Counterattack",
@@ -144,7 +292,7 @@ export const heroes = [
           name: "Dunedain III",
           attack_type: "Melee",
           race: "Men",
-          sizes: [{ heroLevel: 35, armySize: 1750 }],
+          sizes: [{ heroLevel: 35, armySize: [1750] }],
           habilities: [
             {
               name: "Bullseye",
@@ -159,7 +307,7 @@ export const heroes = [
         {
           name: "Longbowman",
           attack_type: "Ranged",
-          sizes: [{ heroLevel: 35, armySize: 1750 }],
+          sizes: [{ heroLevel: 35, armySize: [1750] }],
           race: "Men",
           habilities: [
             {
@@ -174,6 +322,32 @@ export const heroes = [
   {
     name: "Gimli",
     armies: [
+      [
+        {
+          name: "Shieldbearer",
+          attack_type: "Melee",
+          race: "Dwarves",
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Shielding",
+              description: "50% chance for -20% Physical Damage Received",
+            },
+          ],
+        },
+        {
+          name: "Heavy Axe Thrower",
+          attack_type: "Ranged",
+          race: "Dwarves",
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Battlers Bane",
+              description: "+20% Damage against melee units",
+            },
+          ],
+        },
+      ],
       [
         {
           name: "Ram Rider III",
@@ -291,9 +465,39 @@ export const heroes = [
     armies: [
       [
         {
+          name: "Sentinel III",
+          attack_type: "Ranged",
+          race: "Elves",
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Swiftness",
+              description: "100% change to Evade attack 1",
+            },
+          ],
+        },
+        {
+          name: "Warden II",
+          attack_type: "Melee",
+          race: "Elves",
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Counterattack",
+              description:
+                "Perform a Counterattack that deals 30% damage. Normal attack damage is -10%",
+            },
+          ],
+        },
+      ],
+      [
+        {
           name: "Bow Knight",
           attack_type: "Ranged",
-          sizes: [{ heroLevel: 35, armySize: [750] }],
+          sizes: [
+            { heroLevel: 35, armySize: [750] },
+            { heroLevel: 40, armySize: 1000 },
+          ],
           habilities: [
             {
               name: "Mounted",
@@ -310,7 +514,10 @@ export const heroes = [
           name: "Sentinel III",
           attack_type: "Ranged",
           race: "Elves",
-          sizes: [{ heroLevel: 35, armySize: [1500] }],
+          sizes: [
+            { heroLevel: 35, armySize: [1500] },
+            { heroLevel: 40, armySize: 2000 },
+          ],
           habilities: [
             {
               name: "Swiftness",
@@ -384,9 +591,92 @@ export const heroes = [
     armies: [
       [
         {
+          name: "Sentinel III",
+          attack_type: "Ranged",
+          race: "Elves",
+          sizes: [{ heroLevel: 50, armySize: [1250] }],
+          habilities: [
+            {
+              name: "Swiftness",
+              description: "100% change to Evade attack 1",
+            },
+          ],
+        },
+        {
+          name: "Dunedain III",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 50, armySize: [1250] }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+            {
+              name: "Gracefulness",
+              description: "Damage -30% from ranged units",
+            },
+          ],
+        },
+      ],
+      [
+        {
+          name: "Sharpshooter III",
+          attack_type: "Ranged",
+          race: "Men",
+          sizes: [{ heroLevel: 50, armySize: [1250] }],
+          habilities: [
+            {
+              name: "Ranged Advantage",
+              description: "First 2 rounds dealt +40% Damage",
+            },
+          ],
+        },
+        {
+          name: "Herald III",
+          attack_type: "Melee",
+          race: "Elves",
+          sizes: [{ heroLevel: 50, armySize: [1250] }],
+
+          habilities: [
+            {
+              name: "Counterattack",
+              description: "+30 damage",
+            },
+          ],
+        },
+      ],
+      [
+        {
+          name: "Sharpshooter III",
+          attack_type: "Ranged",
+          race: "Men",
+          sizes: [{ heroLevel: 30, armySize: [1750] }],
+          habilities: [
+            {
+              name: "Ranged Advantage",
+              description: "First 2 rounds dealt +40% Damage",
+            },
+          ],
+        },
+        {
+          name: "Ranger II",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 30, armySize: 1750 }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+          ],
+        },
+      ],
+      [
+        {
           name: "Cavalier",
           attack_type: "Melee",
-          sizes: [{ heroLevel: 0, armySize: [] }],
+          sizes: [{ heroLevel: 40, armySize: [1250] }],
 
           habilities: [
             {
@@ -397,6 +687,22 @@ export const heroes = [
               name: "Rohirrim Charge",
               description:
                 "First 1 instances of damage dealt received in battle +50%",
+            },
+          ],
+        },
+        {
+          name: "Dunedain III",
+          attack_type: "Melee",
+          race: "Men",
+          sizes: [{ heroLevel: 50, armySize: [2500] }],
+          habilities: [
+            {
+              name: "Bullseye",
+              description: "Damage +30% against ranged targets",
+            },
+            {
+              name: "Gracefulness",
+              description: "Damage -30% from ranged units",
             },
           ],
         },

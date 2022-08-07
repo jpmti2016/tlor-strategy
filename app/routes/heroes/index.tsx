@@ -1,14 +1,17 @@
+import Hero from "~/components/Hero";
 import { heroes } from "./data-example";
 
 export default function HeroesRoute() {
   return (
     <main className="p-6 bg-yellow-50">
       <h1 className="text-2xl font-bold text-green-900">Heroes</h1>
+
+      <Hero />
       {/* Hero General Info */}
       <div className="flex">
         <div className="hero-card">
           <div className="border-2j6n+69 flex-col space-y-1 p-2">
-            <h2 className="font-semibold">Haldir</h2>
+            <p className="font-semibold">Haldir</p>
 
             <div className="flex justify-between w-full py-1 space-x-2 bg-green-200 border-2 border-blue-800">
               <span className="p-1 bg-blue-200 rounded-lg">Balanced</span>
