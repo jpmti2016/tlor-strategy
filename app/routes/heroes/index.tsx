@@ -6,22 +6,9 @@ export default function HeroesRoute() {
     <main className="p-6 bg-yellow-50">
       <h1 className="text-2xl font-bold text-green-900">Heroes</h1>
 
-      <Hero />
-      {/* Hero General Info */}
-      <div className="flex">
-        <div className="hero-card">
-          <div className="border-2j6n+69 flex-col space-y-1 p-2">
-            <p className="font-semibold">Haldir</p>
-
-            <div className="flex justify-between w-full py-1 space-x-2 bg-green-200 border-2 border-blue-800">
-              <span className="p-1 bg-blue-200 rounded-lg">Balanced</span>
-              <span className="p-1 bg-blue-200 rounded-lg">Elves</span>
-              <span className="p-1 bg-blue-200 rounded-lg">Ranged</span>
-            </div>
-          </div>
-          <p>Swiftness</p>
-        </div>
-      </div>
+      {heroes.map((hero) => {
+        return <Hero hero={hero} key={hero.name} />;
+      })}
 
       {/* Reserved heroes */}
       <div className="flex justify-between p-2 mt-8 text-red-900 bg-red-400 border-2 border-red-600">

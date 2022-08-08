@@ -1,5 +1,3 @@
-export const heroes = [{}];
-
 export const armies = [
   {
     name: "Dunedain III",
@@ -236,9 +234,24 @@ export const armies = [
   },
 ];
 
-export const heroesArmies = [
+export const heroes = [
   {
     name: "Faramir",
+    race: "Men",
+    categories: ["Balanced", "All-around", "Tip Master"],
+    attributesToPushWithLoot: ["Focus"],
+    skills: [
+      { primary: "Rangers of Ithilien", secundaries: ["Flanking", "Rush"] },
+      { primary: "Last Steward", secundaries: ["Inquisitive", "Leader"] },
+      {
+        primary: "Guide",
+        secundarties: ["Armed Escort", "Foresight"],
+      },
+      {
+        primary: "Heir",
+        secundaries: ["Gallant", "Nobility"],
+      },
+    ],
     armies: [
       [
         {
@@ -261,6 +274,21 @@ export const heroesArmies = [
   },
   {
     name: "Theoden",
+    race: "Men",
+    categories: ["TO DO"],
+    attributesToPushWithLoot: ["TO DO"],
+    skills: [
+      {
+        primary: "The Renewed",
+        secundaries: ["Reinforcement", "Defensive Stance"],
+      },
+      { primary: "Rohirrm", secundaries: ["Cleave", "Riding Excellence"] },
+      { primary: "Eored Leader", secundaries: ["Flanking", "Mounted Combat"] },
+      {
+        primary: "Horsemaster",
+        secundaries: ["Vow of Protection", "Chaotic Retreat"],
+      },
+    ],
     armies: [
       [
         {
@@ -269,9 +297,32 @@ export const heroesArmies = [
         },
       ],
     ],
+    // TO DO
   },
   {
     name: "Haldir",
+    race: "Men",
+    range: "Melee",
+    categories: ["Balanced", "Ranged", "Support"],
+    attributesToPushWithLoot: ["Focus", "Speed"],
+    skills: [
+      {
+        primary: "Marchwarden of Lorien",
+        secundaries: ["Cull the Weak", "Elite"],
+      },
+      {
+        primary: "Guide",
+        secundaries: ["Armed Scort", "Foresight"],
+      },
+      {
+        primary: "Silvan Elf",
+        secundaries: ["Beast Training", "Forest Agility"],
+      },
+      {
+        primary: "Galadhrim",
+        secundaries: ["Fortify", "Shield Training"],
+      },
+    ],
     armies: [
       [
         {
@@ -287,6 +338,27 @@ export const heroesArmies = [
   },
   {
     name: "Aragorn",
+    race: "Men",
+    categories: ["Balanced", "Melee", "Support"],
+    attributesToPushWithLoot: [],
+    skills: [
+      {
+        primary: "Anduril",
+        secundaries: ["Cull the Weak.", "Weapons Expertise."],
+      },
+      {
+        primary: "Dunedain Chieftain",
+        secundaries: ["Brawling Training.", "Well-prepared."],
+      },
+      {
+        primary: "Strider",
+        secundaries: ["Precise Blow.", "Raid"],
+      },
+      {
+        primary: "Hidden Heir",
+        secundaries: ["Sun and Moon Splendour", "Nobility"],
+      },
+    ],
     armies: [
       [
         {
@@ -352,6 +424,24 @@ export const heroesArmies = [
   },
   {
     name: "Gimli",
+    race: "Dwarves",
+    categories: ["Warrior", "Dwarf", "Support"],
+    attributesToPushWithLoot: ["Might", "Focus"],
+    skills: [
+      {
+        primary: "Experienced warrior",
+        secundaries: ["Hunt Down", "Collaboration"],
+      },
+      {
+        primary: "Lockbearer",
+        secundaries: ["Friendly Relations", "Protect elves."],
+      },
+      { primary: "Durin blood", secundaries: ["Whirlwind", "All-In."] },
+      {
+        primary: "Lord of the Glittering Caves",
+        secundaries: ["Break Defenses", "Open Wounds."],
+      },
+    ],
     armies: [
       [
         {
@@ -397,6 +487,9 @@ export const heroesArmies = [
   },
   {
     name: "Legolas",
+    race: "Elves",
+    categories: ["TO DO"],
+    attributesToPushWithLoot: ["TO DO"],
     armies: [
       [
         {
@@ -448,6 +541,9 @@ export const heroesArmies = [
   },
   {
     name: "Gandalf",
+    race: "Maiar",
+    categories: ["TO DO"],
+    attributesToPushWithLoot: ["TO DO"],
     armies: [
       [
         {
@@ -490,5 +586,26 @@ export const heroesArmies = [
         },
       ],
     ],
+  },
+  {
+    name: "Eowyn",
+    race: "Men",
+    categories: ["Balanced", "Mounted", "Heal"],
+    attributesToPushWithLoot: ["Might", "Speed"],
+    armies: [["TO DO"]],
+  },
+  {
+    name: "Dwalin",
+    race: "Dwarves",
+    categories: ["Warrior", "All-around", "Heal"],
+    attributesToPushWithLoot: ["Might", "Focus"],
+    armies: [["TO DO"]],
+  },
+  {
+    name: "Hirgon",
+    race: "Men",
+    categories: ["Warrior", "All-around", "Tip Master"],
+    attributesToPushWithLoot: ["Might", "Speed"],
+    armies: [["TO DO"]],
   },
 ];
