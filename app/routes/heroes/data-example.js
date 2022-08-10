@@ -490,6 +490,7 @@ export const heroes = [
     race: "Elves",
     categories: ["TO DO"],
     attributesToPushWithLoot: ["TO DO"],
+    skills: [{ primary: "TO DO", secondary: "TO DO" }],
     armies: [
       [
         {
@@ -544,6 +545,7 @@ export const heroes = [
     race: "Maiar",
     categories: ["TO DO"],
     attributesToPushWithLoot: ["TO DO"],
+    skills: [{ primary: "TO DO", secondary: "TO DO" }],
     armies: [
       [
         {
@@ -593,6 +595,7 @@ export const heroes = [
     categories: ["Balanced", "Mounted", "Heal"],
     attributesToPushWithLoot: ["Might", "Speed"],
     armies: [["TO DO"]],
+    skills: [{ primary: "TO DO", secondary: "TO DO" }],
   },
   {
     name: "Dwalin",
@@ -600,6 +603,7 @@ export const heroes = [
     categories: ["Warrior", "All-around", "Heal"],
     attributesToPushWithLoot: ["Might", "Focus"],
     armies: [["TO DO"]],
+    skills: [{ primary: "TO DO", secondary: "TO DO" }],
   },
   {
     name: "Hirgon",
@@ -607,5 +611,6 @@ export const heroes = [
     categories: ["Warrior", "All-around", "Tip Master"],
     attributesToPushWithLoot: ["Might", "Speed"],
     armies: [["TO DO"]],
+    skills: [{ primary: "TO DO", secondary: "TO DO" }],
   },
 ];
